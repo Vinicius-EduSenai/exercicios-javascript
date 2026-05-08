@@ -1,11 +1,11 @@
 const prompt = require('prompt-sync')();
 
-console.log("--- Cálculo da Velocidade de um Projétil ---");
+console.log("--- Cálculo de Potência ---");
 
-let dist = Number(prompt("Insira o valor da distância percorrida em kilômetos: "));
-let temp = Number(prompt("Insira o valor dao tempo percorrido em horas: "));
+let base = Number(prompt("Insira o valor da base: "));
+let expo = Number(prompt("Insira o valor do expoente: "));
 
 
-let velocidade = dist / temp / 3.6
+let resultado = Math.pow(base,expo)
 
-console.log(`A velocidade percorrida em metros por segundo foi de: ${velocidade} m/s`);
+console.log(`Seu resultado é: ${resultado}`);
